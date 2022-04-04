@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Comentarios: shitf + alt + a -->
+    <!-- Margenes: .container.section + enter -->
+    <div class="container section">
+      <!-- Titulos, subtitulos -->
+      <!-- h1: mayor tamaño, h5: menor tamaño -->
+      <h1>FORMULARIO</h1>
+      <!-- Crear una fila: .row -->
+      <div class="row">
+        <!-- Crear una columna: .col -->
+        <!-- 
+            s (small): pantalla pequeña (celular) 
+            m (medium): pantalla mediana (tablets)
+            l (large): pantalla grande(computador)
+            Una columna se puede dividir en máximo 12 secciones
+            -->
+
+        <div class="col s12 m12 l6 input-field">
+          <!-- La columna se puede dividir en 12 secciones -->
+          <!-- Columna1 -->
+          <!-- Campo que solicita al usuario su nombre -->
+          <!-- Campo de texto: input:text -->
+          <!-- label + enter -->
+          <label for="user_name">Nombre(s)</label>
+          <input type="text" name="user_name" id="user_name" />
+        </div>
+
+        <div class="col s12 m12 l6 input-field">
+          <!-- Columna2 -->
+          <label for="user_lastname">Apellido(s)</label>
+          <input type="text" name="user_lastname" id="user_lastname" />
+        </div>
+      </div>
+      <!-- fila3 -->
+      <div class="row">
+          <div class="col s4 m4 l4 input-field">
+            <label for="user_age">Edad</label>
+            <input type="number" name="user_age" id="user_age" min="17" max="69">
+          </div>
+
+          <div class="col s8 m8 l8 input-field">
+              <label for="user_email">Correo electrónico</label>
+              <input type="text" name="user_email" id="user_email">
+          </div>
+      </div>
+      <!-- fila2 -->
+      <div class="row">
+        <div class="col">
+          <!-- button:submit + enter -->
+          <button
+            class="waves-effect waves-light btn"
+            type="submit"
+            onclick="showMessage()">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- script:src -->
+  <script src="./src/js/function.js"></script>
+</html>
